@@ -1,0 +1,42 @@
+.hero {
+  background: #313a5a;
+  height: 100vh;
+  max-height: 1000px;
+  min-height: 850px;
+
+  article {
+    width: 45%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+
+    h1 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 30px;
+    width: 400px;
+    animation: pop 1.5s ease;
+  }
+
+  @keyframes pop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+}

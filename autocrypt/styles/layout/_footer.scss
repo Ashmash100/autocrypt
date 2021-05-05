@@ -1,0 +1,35 @@
+footer {
+  padding: 200px 0 110px 0;
+  text-align: center;
+  color: $textblue;
+
+  h6 {
+    color: $headingblue;
+    margin-bottom: 60px;
+  }
+
+  .brands {
+    margin-bottom: 180px;
+
+    img {
+      width: 130px;
+      object-fit: contain;
+      height: 70px;
+      margin-right: 50px;
+      vertical-align: top;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  ul {
+    margin-top: 50px;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}

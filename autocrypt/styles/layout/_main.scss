@@ -1,0 +1,125 @@
+.main {
+  padding: 500px 0 200px 0;
+  position: relative;
+
+  .features {
+    background: white;
+    width: 80%;
+    margin: auto;
+    padding: 80px 60px;
+    position: absolute;
+    top: -95px;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    @include boxshadow(2px, 0px, 39px, -26px, rgba(0, 0, 0, 0.75));
+
+    article {
+      float: left;
+      width: calc((100% - 120px) / 3);
+      margin-right: 60px;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+
+    figure {
+      display: inline-block;
+      padding: 13px;
+      border-radius: 5px;
+      background: rgba(31, 219, 132, 0.1);
+      margin-bottom: 25px;
+
+      img {
+        width: 40px;
+      }
+    }
+
+    h5 {
+      color: $headingblue;
+      margin-bottom: 25px;
+    }
+
+    hr {
+      border: none;
+      background: $green;
+      height: 4px;
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: $textblue;
+    }
+  }
+
+  .pricing {
+    text-align: center;
+    font-size: 0;
+    color: $headingblue;
+
+    h2 {
+      line-height: 1.5;
+      margin-bottom: 60px;
+    }
+
+    button {
+      &:nth-child(2) {
+        border-right: 0;
+        background-color: white;
+      }
+
+      &:nth-child(3) {
+        background-color: #f1fff8;
+      }
+    }
+  }
+
+  .pricing-cards {
+    margin-top: 65px;
+
+    .card {
+      width: 350px;
+      display: inline-block;
+      padding: 50px 58px;
+      box-sizing: border-box;
+
+      &:hover {
+        background-color: white;
+        // border-top: 3px solid #0a8aff;
+        @include boxshadow(2px, 0px, 39px, -26px, rgba(0, 0, 0, 0.75));
+        transition: all 0.2s;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      color: $headingblue;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 72px;
+      font-weight: 400;
+      color: $green;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      color: $textblue;
+      margin-bottom: 50px;
+    }
+
+    ul {
+      margin-bottom: 55px;
+
+      li {
+        font-size: 16px;
+        color: $textblue;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
